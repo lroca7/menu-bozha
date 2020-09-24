@@ -1,8 +1,5 @@
 <template>
   <div class="hello">
-    <p>
-        Nuestro Menu
-    </p>
     <img src='../assets/1.png' />
   </div>
 </template>
@@ -18,6 +15,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+body{
+    background: #89CFD1;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -31,5 +31,8 @@ li {
 }
 a {
   color: #42b983;
+}
+img {
+    width: 100%;
 }
 </style>
