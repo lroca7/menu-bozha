@@ -1,7 +1,14 @@
 <template>
   <div class="hello">
+    <div class='languages'>
+      <img src='../assets/usa.png' @click="selectLanguage('english')" />
+      <img src='../assets/colombia.png'  @click="selectLanguage('spanish')"/>
+    </div>
     <div class='title'>Menu</div>
-    <img src='../assets/1.png' />
+   
+    
+    <img v-if="language === 'spanish'" src='../assets/2.png' />
+     <img v-else src='../assets/1.png' />
   </div>
 </template>
 
@@ -10,6 +17,17 @@ export default {
   name: 'Menu',
   props: {
     msg: String
+  },
+  data() {
+        return {
+            language: 'spanish',
+        }
+    },
+
+  methods: {
+    selectLanguage(languageSelected) {
+      this.language = languageSelected
+    }
   }
 }
 </script>
@@ -38,5 +56,14 @@ img {
   font-family: 'Chewy', cursive;
   font-size: 24px;
   color: #665946;
+}
+.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.languages img{
+  width: 30px;
+  padding: 0px 5px;
 }
 </style>
