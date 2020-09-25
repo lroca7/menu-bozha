@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <div class='title'>Menu</div>
     <img src='../assets/1.png' />
   </div>
 </template>
@@ -15,9 +16,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-body{
-    background: #89CFD1;
-}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -34,5 +33,10 @@ a {
 }
 img {
     width: 100%;
+}
+.title {
+  font-family: 'Chewy', cursive;
+  font-size: 24px;
+  color: #665946;
 }
 </style>
