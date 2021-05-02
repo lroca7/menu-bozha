@@ -7,8 +7,8 @@
     <div class='title'>Menu</div>
    
     
-    <img v-if="language === 'spanish'" src='../assets/2.png' />
-     <img v-else src='../assets/1.png' />
+    <img v-if="language === 'spanish'" src='../assets/2.jpg' />
+     <img v-else src='../assets/1.jpg' />
   </div>
 </template>
 
@@ -53,9 +53,11 @@ img {
     width: 100%;
 }
 .title {
-  font-family: 'Chewy', cursive;
-  font-size: 24px;
-  color: #665946;
+  /* font-family: 'Chewy', cursive; */
+  font-size: 42px;
+  /* color: #665946; */
+  color: #446FC2;
+  font-weight: bold;
 }
 .languages {
   display: flex;
