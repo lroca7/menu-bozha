@@ -7,8 +7,8 @@
     <div class='title'>Menu</div>
    
     
-    <img v-if="language === 'spanish'" src='../assets/2.jpg' />
-     <img v-else src='../assets/1.jpg' />
+    <img v-if="language === 'spanish'" src='../assets/1.jpg' />
+     <img v-else src='../assets/2.jpg' />
   </div>
 </template>
 
