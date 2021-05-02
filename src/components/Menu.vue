@@ -68,4 +68,10 @@ img {
   width: 30px;
   padding: 0px 5px;
 }
+
+@media screen and (max-width: 1200px) {
+.title {
+  font-size: 1rem;
+}
+}
 </style>
