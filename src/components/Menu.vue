@@ -4,8 +4,8 @@
       <img src='../assets/usa.png' @click="selectLanguage('english')" />
       <img src='../assets/colombia.png'  @click="selectLanguage('spanish')"/>
     </div>
-    <div class='title'>Menú</div>
-   
+    <div v-if="language === 'spanish'" class='title'>Menú</div>
+    <div v-else class='title'>Menu</div>
     
     <img v-if="language === 'spanish'" src='../assets/1.jpg' />
      <img v-else src='../assets/2.jpg' />
