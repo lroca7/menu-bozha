@@ -4,11 +4,18 @@
       <img src='../assets/usa.png' @click="selectLanguage('english')" />
       <img src='../assets/colombia.png'  @click="selectLanguage('spanish')"/>
     </div>
-    <div v-if="language === 'spanish'" class='title'>Menú</div>
-    <div v-else class='title'>Menu</div>
+    <div class="options__menu">
+      <div v-if="language === 'spanish'" class='title'>Menú</div>    
+      <div v-else class='title'>Menu</div>
+    </div>
     
-    <img v-if="language === 'spanish'" src='../assets/1.jpg' />
-    <img v-else src='../assets/2.jpg' />
+    
+    
+    <img v-if="language === 'spanish'" src='../assets/1.jpg' alt="Menu" />
+    <img v-else src='../assets/2.jpg' alt="Menu" />
+
+    <img v-if="language === 'spanish'" src='../assets/bozhayuno.jpg' alt="Menu" />
+    <img v-else src='../assets/bozhayuno_eng.jpg' alt="Menu" />
   </div>
 </template>
 
@@ -67,6 +74,16 @@ img {
 .languages img{
   width: 30px;
   padding: 0px 5px;
+}
+
+.options__menu {
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  .option2 {
+    margin-left: 70px;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
