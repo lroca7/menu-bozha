@@ -22,15 +22,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
+  background: #1e5e9a;
+  padding: 0;
+  margin: 0;
 }
 body {
-  /* background: rgb(139, 209, 209);
-  background: linear-gradient(
-    180deg,
-    rgba(137, 207, 209, 1) 39%,
-    rgba(87, 182, 173, 1) 100%
-  ); */
+  padding: 0;
+  margin: 0;
   height: 100vh;
 }
 </style>
